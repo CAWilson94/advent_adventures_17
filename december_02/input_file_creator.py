@@ -1,6 +1,9 @@
-def input_from_file(file_name): 
+import pandas as pd
+
+
+def input_from_file(file_name):
     """ getting output from file input """
-    file = open(file_name, "r")
-    output = None # use input as needed ...
-    file.close()
-    return output
+    data = pd.read_csv(file_name, delimiter='\s+', header = None)
+    df = pd.DataFrame(data)
+    return df
+
