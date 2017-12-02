@@ -12,15 +12,3 @@ def non_human_captcha(puzzle_input):
     captcha_answer = sum(sum_array)
     return captcha_answer
 
-def boop():
-    boop = [1, 2, 3, 4]
-    for x in range(len(boop) *2):
-        print(boop[x % len(boop)])
-
-    #for p in cycle([1, 2, 3]):
-        #print(p)
-
-if __name__ == "__main__":
-
-    print(non_human_captcha(fi.file_input_to_int_list("input.txt")))
-    boop()
