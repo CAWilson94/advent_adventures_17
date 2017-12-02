@@ -1,5 +1,5 @@
 def non_human_captcha(puzzle_input):
-    """ this does something """
+    """ Non Human Captcha Puzzle """
     sum_array = []
     for index in range(len(puzzle_input)-1):
         if puzzle_input[index + 1] == puzzle_input[index]:
