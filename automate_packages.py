@@ -23,7 +23,7 @@ def create_problem_file(path, problem_number):
 
 
 def create_init_file(path):
-    file = open(path + "/_init_.py", "w")
+    file = open(path + "/__init__.py", "w")
     file.close()
 
 
