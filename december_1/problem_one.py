@@ -1,6 +1,3 @@
-from december_1 import file_input as fi
-from itertools import cycle
-
 def non_human_captcha(puzzle_input):
     """ this does something """
     sum_array = []
