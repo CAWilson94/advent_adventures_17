@@ -1,5 +1,4 @@
 def non_human_captcha_2(puzzle_input):
-    """ Non Human Captcha Puzzle """
     length_puzzle_input = len(puzzle_input) * 2
     comp_val = int(len(puzzle_input) / 2)
     sum_array = []
