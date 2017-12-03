@@ -47,4 +47,3 @@ def get_num_moves(end_point):
     steps = la[len(la) - 1][1]
     total_steps = abs(steps[0]) + abs(steps[1])
     return total_steps
-
