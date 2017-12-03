@@ -1,31 +1,12 @@
 from itertools import cycle
-
-
-def _move_right(x, y):
-    """ Move right on the grid """
-    return x+1, y
-
-
-def _move_left(x, y):
-    """ Move left on the grid """
-    return x-1, y
-
-
-def _move_up(x, y):
-    """ Move up on the grid """
-    return x, y + 1
-
-
-def _move_down(x, y):
-    """ Move down on the grid """
-    return x, y-1
+from december_03 import moves as m
 
 
 def _generate_spiral(end_point):
     n = 1
     pos = 0, 0
     times_to_move = 1
-    moves_boop = [_move_right, _move_up, _move_left, _move_down]
+    moves_boop = [m.move_right, m.move_up, m.move_left, m.move_down]
 
     _moves = cycle(moves_boop)
     yield n, pos
