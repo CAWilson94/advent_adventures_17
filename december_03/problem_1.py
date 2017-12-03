@@ -31,12 +31,12 @@ def _generate_spiral(end_point):
     yield n, pos
 
     while True:
-        for item in range(2):
+        for item in range(2):  # Go through moves list twice to get whole spiral..until cut off at return
             move = next(_moves)
             for items in range(times_to_move):
                 if n >= end_point:
                     return
-                pos = move(*pos)
+                pos = move(*pos)  # Argument unpacking woo
                 n += 1
                 yield n, pos
         times_to_move += 1
@@ -48,6 +48,3 @@ def get_num_moves(end_point):
     total_steps = abs(steps[0]) + abs(steps[1])
     return total_steps
 
-
-if __name__ == "__main__":
-    print(get_num_moves(1024))
